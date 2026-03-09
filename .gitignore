@@ -1,0 +1,20 @@
+# sbt
+target/
+project/target/
+project/project/
+
+# IDE
+.idea/
+.bsp/
+.metals/
+.vscode/
+
+# OS
+.DS_Store
+
+# Environment
+.env
+.env.*
+
+# Generated
+generate_report.py

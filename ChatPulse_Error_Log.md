@@ -27,6 +27,11 @@
 - **Cause**: http4s-circe provides multiple EntityEncoder instances for Json
 - **Fix**: Imported `org.http4s.circe.jsonEncoder` specifically, used helper method `jsonReq` with explicit encoder
 
+### 6. CI Missing sbt
+- **Error**: `sbt: command not found` in GitHub Actions
+- **Cause**: CI workflow only had `actions/setup-java@v4` but no sbt setup step
+- **Fix**: Added `sbt/setup-sbt@v1` step after Java setup
+
 ---
 
 ## Security Audit (10-Point Checklist)
